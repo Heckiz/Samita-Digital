@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hashtags",
+  "info": {
+    "name": "hashtag",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designs": {
+      "collection": "design",
+      "via": "hashtags",
+      "dominant": true
+    }
+  }
+}
