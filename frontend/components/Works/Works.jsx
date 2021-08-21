@@ -10,22 +10,25 @@ export default function Works() {
 
   return (
     <>
-      {
-        isError ? <h1>Error</h1> :
+
+
+
+      <Flex border="2px solid black" justifyContent="center" alignItems="center">
+        {
+          isError ? <h1>Error</h1> :
           isLoading ? <h1>Loading</h1> :
+            <Grid templateColumns={{base:"1fr", md:"repeat(2,1fr)", lg:"repeat(4,1fr)"}} gap={4}>
+              {
+                data.map(work => (
+                  <WorkCard work={work}/>
+                ))
+              }
+            </Grid>
+        }
+      </Flex>
 
-            <Flex  border="2px solid black" justifyContent="center" alignItems="center">
-              <Grid>
-                {
-                  data.map(work => (
-                    <WorkCard />
-                  ))
-                }
-              </Grid>
-            </Flex>
 
 
-      }
     </>
   )
 }
