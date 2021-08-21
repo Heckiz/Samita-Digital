@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import WorksList from '../components/Works/WorksList'
+import Works from '../components/Works/Works'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <WorksList/>
+      <Works/>
     </div>
   )
 }
