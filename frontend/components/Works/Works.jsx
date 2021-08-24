@@ -17,7 +17,7 @@ export default function Works() {
         {
           isError ? <h1>Error</h1> :
           isLoading ? <h1>Loading</h1> :
-            <Grid templateColumns={{base:"1fr", md:"repeat(2,1fr)", lg:"repeat(4,1fr)"}} gap={4}>
+            <Grid templateColumns={{base:"1fr", md:"repeat(2,1fr)", lg:"repeat(3,1fr)"}} gap={4}>
               {
                 data.map(work => (
                   <WorkCard work={work}/>
